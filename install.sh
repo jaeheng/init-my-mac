@@ -131,6 +131,8 @@ hdiutil eject /Volumes/Alfred/
 # install oh-my-zsh
 sh -c "$(curl -fsSL https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
 
+exit
+
 # install zsh-autosuggestions
 git clone https://github.com/zsh-users/zsh-autosuggestions ~/.zsh/zsh-autosuggestions
 echo "source ~/.zsh/zsh-autosuggestions/zsh-autosuggestions.zsh" >> ~/.zshrc
@@ -141,3 +143,5 @@ echo "source ~/.zsh/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh" >> ~/.z
 
 # Done!
 echo "Success, enjoy your fe life!"
+
+zsh
