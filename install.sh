@@ -23,10 +23,10 @@ sudo sh -c 'echo "151.101.76.133 raw.githubusercontent.com" >> /etc/hosts'
 # install homebrew
 HOMEBREW_CORE_GIT_REMOTE=https://mirrors.tuna.tsinghua.edu.cn/git/homebrew/homebrew-core.git /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/jaeheng/init-my-mac/master/brew.sh)"/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install.sh)" < /dev/null
 
-git clone https://mirrors.tuna.tsinghua.edu.cn/git/homebrew/homebrew-cask.git "$(brew --repo homebrew/cask)" --depth=1
-git clone https://mirrors.tuna.tsinghua.edu.cn/git/homebrew/homebrew-cask-fonts.git "$(brew --repo homebrew/cask-fonts)" --depth=1
-git clone https://mirrors.tuna.tsinghua.edu.cn/git/homebrew/homebrew-cask-drivers.git "$(brew --repo homebrew/cask-drivers)" --depth=1
-git clone https://mirrors.nwafu.edu.cn/homebrew-cask-versions.git "$(brew --repo homebrew/cask-versions)" --depth=1
+git clone https://mirrors.tuna.tsinghua.edu.cn/git/homebrew/homebrew-cask.git "$(brew --repo homebrew/cask)"
+git clone https://mirrors.tuna.tsinghua.edu.cn/git/homebrew/homebrew-cask-fonts.git "$(brew --repo homebrew/cask-fonts)"
+git clone https://mirrors.tuna.tsinghua.edu.cn/git/homebrew/homebrew-cask-drivers.git "$(brew --repo homebrew/cask-drivers)"
+git clone https://mirrors.nwafu.edu.cn/homebrew-cask-versions.git "$(brew --repo homebrew/cask-versions)"
 
 # brew 程序本身，Homebrew/Linuxbrew 相同
 git -C "$(brew --repo)" remote set-url origin https://mirrors.tuna.tsinghua.edu.cn/git/homebrew/brew.git
