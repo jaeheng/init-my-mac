@@ -18,7 +18,7 @@ then
 fi
 
 # modify hosts
-echo "151.101.76.133 raw.githubusercontent.com" >> /etc/hosts
+sudo echo "151.101.76.133 raw.githubusercontent.com" >> /etc/hosts
 
 # install homebrew
 HOMEBREW_CORE_GIT_REMOTE=https://mirrors.tuna.tsinghua.edu.cn/git/homebrew/homebrew-core.git /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/jaeheng/init-my-mac/master/brew.sh)"
