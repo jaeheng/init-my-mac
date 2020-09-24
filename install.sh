@@ -126,10 +126,10 @@ brew cask install OneDrive
 brew cask install IINA
 
 # install xunlei player
-brew cask ininstallfo xlplayer
+brew cask install xlplayer
 
 # install oh-my-zsh
-sh -c "$(curl -fsSL https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
+sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
 
 exit
 
