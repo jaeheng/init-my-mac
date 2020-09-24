@@ -21,7 +21,7 @@ fi
 sudo sh -c 'echo "151.101.76.133 raw.githubusercontent.com" >> /etc/hosts'
 
 # install homebrew
-HOMEBREW_CORE_GIT_REMOTE=https://mirrors.tuna.tsinghua.edu.cn/git/homebrew/homebrew-core.git /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/jaeheng/init-my-mac/master/brew.sh)"
+HOMEBREW_CORE_GIT_REMOTE=https://mirrors.tuna.tsinghua.edu.cn/git/homebrew/homebrew-core.git /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/jaeheng/init-my-mac/master/brew.sh)"/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install.sh)" < /dev/null
 
 git clone https://mirrors.tuna.tsinghua.edu.cn/git/homebrew/homebrew-cask.git /usr/local/Homebrew/Library/Taps/homebrew/homebrew-cask --depth=1
 git clone https://mirrors.tuna.tsinghua.edu.cn/git/homebrew/homebrew-cask-fonts.git /usr/local/Homebrew/Library/Taps/homebrew/homebrew-cask-fonts --depth=1
@@ -74,65 +74,52 @@ git config --global user.email $email
 git config --global user.name $name
 
 # install vscode
-wget https://vscode.cdn.azure.cn/stable/58bb7b2331731bf72587010e943852e13e6fd3cf/VSCode-darwin-stable.zip
-unzip VSCode-darwin-stable.zip
-mv Visual\ Studio\ Code.app /Applications/
-rm -f VSCode-darwin-stable.zip
+brew cask install visual-studio-code
 
 # install wechat
-wget https://dldir1.qq.com/weixin/mac/WeChatMac.dmg
-hdiutil attach WeChatMac.dmg
-cp -rf /Volumes/微信\ WeChat/WeChat.app /Applications/
-rm -f ./WeChatMac.dmg
-hdiutil eject /Volumes/微信\ WeChat/
+brew cask install wechat
 
 # install netease music
-wget -O NeteaseMusic.dmg http://d1.music.126.net/dmusic/NeteaseMusic_2.3.2_832_web.dmg
-hdiutil attach NeteaseMusic.dmg
-cp -rf /Volumes/网易云音乐/NeteaseMusic.app /Applications/
-rm -f NeteaseMusic.dmg
-hdiutil eject /Volumes/网易云音乐/
+brew cask install neteasemusic
 
 # install QQ
-wget -O QQ.dmg https://dldir1.qq.com/qqfile/QQforMac/QQ_6.6.9.dmg
-yes qy | hdiutil attach QQ.dmg > /dev/null
-cp -rf /Volumes/QQ/QQ.app /Applications
-rm -f QQ.dmg
-hdiutil eject /Volumes/QQ
+brew cask install qq
 
 # install chrome
-wget -O googlechrome.dmg https://dl.google.com/chrome/mac/stable/GGRO/googlechrome.dmg
-hdiutil attach googlechrome.dmg -nobrowse
-cp -rf /Volumes/Google\ Chrome/Google\ Chrome.app /Applications
-rm -f googlechrome.dmg
-hdiutil eject /Volumes/Google\ Chrome
+brew cask install google-chrome
 
 # install V2rayU
-wget https://github.com/yanue/V2rayU/releases/download/2.3.1/V2rayU.dmg
-hdiutil attach V2rayU.dmg -nobrowse
-cp -rf /Volumes/V2rayU\ Installer/V2rayU.app /Applications
-rm -f V2rayU.dmg
-hdiutil eject /Volumes/V2rayU\ Installer
+brew cask install V2rayU
 
 # install thunder
-wget -O thunder.dmg http://down.sandai.net/mac/thunder_3.4.1.4368.dmg
-hdiutil attach thunder.dmg -nobrowse
-cp -rf /Volumes/迅雷/Thunder.app /Applications
-rm -f thunder.dmg
-hdiutil eject /Volumes/迅雷/
+brew cask install thunder
 
 # install iTerm2
-wget -O iTerm2.zip https://raw.githubusercontent.com/jaeheng/init-my-mac/master/application/iTerm2-3_3_12.zip
-unzip iTerm2.zip
-mv iTerm.app /Applications/
-rm -f iTerm2.zip
+brew cask install iTerm2
 
 # install Alfred
-wget -O alfred.dmg https://cachefly.alfredapp.com/Alfred_4.1.1_1172.dmg
-hdiutil attach alfred.dmg -nobrowse
-cp -rf /Volumes/Alfred/Alfred\ 4.app /Applications
-rm -f alfred.dmg
-hdiutil eject /Volumes/Alfred/
+brew cask install Alfred
+
+# install The Unarchiver
+brew cask install the-unarchiver
+
+# install mysqlworkbench
+brew cask install mysqlworkbench
+
+# install Tencent-Lemon
+brew cask install Tencent-Lemon
+
+# install qqplayer
+brew cask install qqplayer
+
+# install OneDrive
+brew cask install OneDrive
+
+# install IINA
+brew cask install IINA
+
+# install xunlei player
+brew cask ininstallfo xlplayer
 
 # install oh-my-zsh
 sh -c "$(curl -fsSL https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
