@@ -39,8 +39,11 @@ brew install tldr
 # install wget
 brew install wget
 
-# install oh-my-zsh
-sh -c "$(curl -fsSL https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
+# install switchhosts
+brew cask install switchhosts
+
+# install axel
+brew install axel
 
 # install nvm
 curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.35.3/install.sh | bash
@@ -125,8 +128,8 @@ cp -rf /Volumes/Alfred/Alfred\ 4.app /Applications
 rm -f alfred.dmg
 hdiutil eject /Volumes/Alfred/
 
-# install switchhosts
-brew cask install switchhosts
+# install oh-my-zsh
+sh -c "$(curl -fsSL https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
 
 # install zsh-autosuggestions
 git clone https://github.com/zsh-users/zsh-autosuggestions ~/.zsh/zsh-autosuggestions
@@ -135,9 +138,6 @@ echo "source ~/.zsh/zsh-autosuggestions/zsh-autosuggestions.zsh" >> ~/.zshrc
 # install zsh-syntax-highlighting
 git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ~/.zsh/zsh-syntax-highlighting
 echo "source ~/.zsh/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh" >> ~/.zshrc
-
-# install axel
-brew install axel
 
 # Done!
 echo "Success, enjoy your fe life!"
