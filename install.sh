@@ -93,9 +93,6 @@ brew install --cask IINA
 # install xunlei player
 brew install --cask xlplayer
 
-# install typora
-brew install --cask typora
-
 # install baidu net disk
 brew install --cask baidunetdisk
 
