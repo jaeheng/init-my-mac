@@ -18,7 +18,7 @@ then
 fi
 
 # install homebrew
-sh -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
+/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
 
 # 更换后测试工作是否正常
 brew update
