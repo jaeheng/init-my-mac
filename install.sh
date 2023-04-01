@@ -23,9 +23,6 @@ fi
 # 更换后测试工作是否正常
 brew update
 
-# install git
-brew install git
-
 # install tldr
 brew install tldr
 
@@ -36,7 +33,8 @@ brew install wget
 brew install axel
 
 # install nvm
-curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.0/install.sh | bash
+curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.3/install.sh | bash
+
 export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
 
@@ -47,11 +45,9 @@ nvm install --lts --latest-npm
 npm install -g nrm
 
 # Install some useful cli tools
-npm install -g @vue/cli
-npm install -g gulp
 npm install -g http-server
 npm install -g typescript
-npm install -g vuepress
+npm install -g vite
 
 # set git config
 git config --global user.email $email
