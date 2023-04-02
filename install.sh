@@ -105,6 +105,12 @@ brew install --cask phpstorm
 # install pycharm
 brew install --cask pycharm
 
+# install php switcher
+brew tap shivammathur/php
+brew install shivammathur/php/php@7.4
+brew install shivammathur/php/php@8.2
+
+
 # install oh-my-zsh
 sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
 
