@@ -96,6 +96,15 @@ brew install --cask xlplayer
 # install baidu net disk
 brew install --cask baidunetdisk
 
+# install webstorm
+brew install --cask webstorm
+
+# install phpstorm
+brew install --cask phpstorm
+
+# install pycharm
+brew install --cask pycharm
+
 # install oh-my-zsh
 sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
 
